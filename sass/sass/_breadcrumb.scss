@@ -1,10 +1,12 @@
 .breadcrumb {
-    border-bottom: 1px solid #EEE;
+    // border-bottom: 1px solid #EEE;
     padding: .1em 0em .1em;
     font-size: .813em;
-    margin: 0px auto 5px;
+    margin: 0px auto 15px;
+    display: block;
     ul {
         @include li-reset;
+        margin: 0 0 0 -3px;
         li {
             display: inline-block;
             margin: 0px .1em .1em 0px;

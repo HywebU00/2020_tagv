@@ -1,10 +1,10 @@
 // 自行加入的JS請寫在這裡
 $(function() {
     // 首頁輪播
-    $('.mpSlider').slick({
+    $('.mpSlider .container').slick({
         mobileFirst: true,
         dots: true,
-        arrow: true,
+        arrows: true,
         infinite: true,
         speed: 500,
         autoplay: true,
@@ -12,6 +12,67 @@ $(function() {
         lazyLoaded: true,
         lazyLoad: 'ondemand',
         ease: 'ease'
+    });
+    $('.mpSlider-2').slick({
+        mobileFirst: true,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        fade: true,
+        lazyLoaded: true,
+        lazyLoad: 'ondemand',
+        ease: 'ease'
+    });
+    $('.bookSlider').slick({
+        mobileFirst: true,
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrow: true,
+        lazyLoaded: true,
+        lazyLoad: 'ondemand',
+        ease: 'ease',
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        },{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        },{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        },{
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        },{
+            breakpoint: 0,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }],
     });
     // 廣告輪播
     $('.adSlider').slick({
@@ -97,11 +158,11 @@ $(function() {
         lazy: true
     });
      // cp_photo
-    $('.Slider-for').on('init reInit afterChange', function(event, slick, currentSlide) {
+     $('.Slider-for').on('init reInit afterChange', function(event, slick, currentSlide) {
         var i = (currentSlide ? currentSlide : 0) + 1;
         $('.controls').html(i + '/' + slick.slideCount);
     });
-    $('.Slider-for').slick({
+     $('.Slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -112,7 +173,7 @@ $(function() {
         asNavFor: '.Slider-nav',
         infinite: true
     });
-    $('.Slider-nav').slick({
+     $('.Slider-nav').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         asNavFor: '.Slider-for',
@@ -122,5 +183,4 @@ $(function() {
         focusOnSelect: true,
         infinite: true
     });
-    
-});
+ });

@@ -1,5 +1,30 @@
 .qp{
-	margin: 1em auto;
+	margin: 1em auto 2em auto;
 	@include box-sizing;
 	padding:1em;
+	border: 6px solid #dedede;
+	@include screen('mobile') {
+		margin-top: 0;
+	}
+	.form_grid .form_grp .form_content{
+		@include screen('mobile') {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.form_grid .form_grp .form_content.date{
+		input[type="text"]{
+			width: 49%;
+			float: left;
+		}
+		label{
+			width: 2%;
+			text-align: center;
+			float: left;
+			line-height: 38px;
+		}
+		.notice_info{
+			clear: both;
+		}
+	}
 }
