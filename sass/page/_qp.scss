@@ -28,3 +28,48 @@
 		}
 	}
 }
+.cse .gsc-control-cse, .gsc-control-cse{
+	padding: 0;
+}
+table.gsc-search-box{
+	table td{
+		border-bottom: 0!important;
+	}
+	table tr:first-child {
+		border-top: 0;
+	}
+}
+.cse .gsc-search-button-v2, .gsc-search-button-v2{
+	padding: 16px 27px!important;
+}
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+	padding: 0!important;
+}
+// .gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
+// 	border-color: #444!important;
+// 	background-color: #444!important;
+// }
+.gsc-above-wrapper-area{
+	border-bottom: 0!important;
+	.gsc-above-wrapper-area-container{
+		.gsc-result-info-container{
+			padding: 0;
+			border: 0;
+		}
+		.gsc-orderby-container{
+			padding: 0;
+			border: 0;
+		}
+	}
+}
+// .gsst_a .gscb_a {
+// 	color: #aaa!important;
+// }
+// .gscb_a {
+// 	line-height: 32px!important;
+// }
+.gsc-control-cse .gsc-option-menu-container{
+	float: right;
+	white-space: nowrap;
+	margin-top: 2px;
+}
